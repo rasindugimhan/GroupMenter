@@ -65,7 +65,7 @@ RUN apt update && apt upgrade -y && \
 RUN pip3 install --upgrade pip setuptools
 
 # Copy Python Requirements to /root/GroupMenter
-RUN git clone -b shiken https://github.com/TeamGroupMenter/GroupMenter /root/GroupMenter
+RUN git clone -b shiken https://github.com/rasindugimhan/GroupMenter /root/GroupMenter
 WORKDIR /root/GroupMenter
 
 #Copy config file to /root/GroupMenter/GroupMenter
