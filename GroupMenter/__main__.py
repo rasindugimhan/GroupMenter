@@ -74,8 +74,8 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-*Hey there! My name is Group Menter*.
-*I'm here to help you manage your groups!*
+*Hey there! My name is Shizu*.
+*I'm here to help you manage your groups and provide your fun!*
 
 Hit /help to find out more about how to use me to my full potential.
 """
@@ -83,15 +83,15 @@ Hit /help to find out more about how to use me to my full potential.
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ ADD TO YOUR GROUP ➕️", url="https://t.me/GroupMenterRobot?startgroup=true"),
+            text="➕️ ADD TO YOUR GROUP ➕️", url="https://t.me/Shizu_herobot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="🇦🇺 Language", url="https://t.me/TG_BOT_DEVS/16"),
-        InlineKeyboardButton(text="📜 Source", url="https://github.com/TeamGroupMenter/GroupMenter"),
+        InlineKeyboardButton(text="📜 Source", url="https://github.com/rasindugimhan/GroupMenter"),
     ],
     [
-        InlineKeyboardButton(text="🤖 News", url="https://t.me/GroupMenterUpdates"),
-        InlineKeyboardButton(text="👥 Support", url="https://t.me/GroupMenterGroup"),
+        InlineKeyboardButton(text="🤖 News", url="https://t.me/Mr_RG_YT"),
+        InlineKeyboardButton(text="👥 Support", url="https://t.me/Mr_RG_YT"),
     ],
     [
         InlineKeyboardButton(
@@ -102,8 +102,8 @@ buttons = [
 
 
 HELP_STRINGS = """
-*Hey There! My name is Group Menter.*
-*I'm here to help you manage your groups!*
+*Hey There! My name is Shizu💕.*
+*I'm here to help you manage your groups and provide fun!*
 
 *Commands available:*
 *× /start: Start the bot*
@@ -404,8 +404,8 @@ def Source_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *Group Menter*
-                 \nHere is the [Source Code](https://github.com/TeamGroupMenter/GroupMenter) .""",
+            text=""" Hi..🤗 I'm *Shizu💕*
+                 \nHere is the [Source Code](https://github.com/rasindugimhan/GroupMenter) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=False,
             reply_markup=InlineKeyboardMarkup(
